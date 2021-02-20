@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-2by1">
+                            <img src="https://images.unsplash.com/photo-1574883578510-aa1bbbb7472c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                                alt="">
+                        </figure>
+                    </div>
+                    <header class="card-header">
+                        <p class="card-header-title is-size-1 has-text-centered">
+                            Score Keeper
+                        </p>
+                    </header>
+                    <div class="card-content">
+                        <label for="selectBtn" class="label is-inline is-large">Best Of: </label>
+                        <div class="select is-rounded">
+                            <select id="selectBtn">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <h1 class="title is-1"><span id="p1Display">0</span> to <span id="p2Display">0</span>
+                    </div>
+                </div>
+                <footer class="card-footer">
+                    <button id="p1Btn" class="button is-primary card-footer-item is-large">+1 Player 1</button>
+                    <button id="p2Btn" class="button is-warning card-footer-item is-large">+1 Player 2</button>
+                    <button id="resetBtn" class="button is-danger card-footer-item is-large">Reset</button>
+                </footer>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="scoreKeeper.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</body>
+
+</html>
